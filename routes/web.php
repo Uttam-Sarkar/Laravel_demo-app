@@ -1,7 +1,11 @@
 <?php
 
+// use controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\demo_controller;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +29,6 @@ Route::post('/product', [ProductController::class, 'store'])->name('product.stor
 Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
 Route::put('/product/{product}/update', [ProductController::class, 'update'])->name('product.update');
 Route::delete('/product/{product}/distroy', [ProductController::class, 'distroy'])->name('product.distroy');
+
+
+Route::get('/book', [demo_controller::class, 'dindex'])->name('product.dindex');

@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Product</h1>
-
     <div>
         @if(session()->has('success'))
             <div>
@@ -16,6 +15,9 @@
         @endif
     </div>
     <div>
+        <div>
+            <a href="{{route('product.create')}}">Create a Product</a>
+        </div>
         <table border="1">
             <tr>
                <th>ID</th>
